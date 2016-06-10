@@ -1,0 +1,23 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+div#container {
+	height: 100%;
+}
+.menu {
+	text-align: right;
+
+}
+
+button#trigger {
+
+}
+
+div.time {
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 62px;
+}
