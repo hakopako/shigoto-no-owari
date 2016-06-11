@@ -9,19 +9,36 @@
     <link href="cmn.css" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js"></script>
     <script src="slidereveal.js"></script>
     <script src="cmn.js"></script>
     <title>shigoto-no-owari</title>
 </head>
 <body>
 <div id="container">
-	<div class="menu">
-		<button id="trigger">Trigger</button>
-		<div id="slider" class="slider">
-		hello
-		</div>
-	</div>
-	<div class="time">00:00:00</div>
+    <div class="menu">
+        <div id="trigger" class="open"></div>
+        <div id="slider" class="slider">
+            <p class="service-name"> ＼ shigoto-no-owari ／</p>
+            <input type="text" placeholder="Title" name="title" class="title"></input><br>
+            <select name="hour">
+            </select> : 
+            <select name="min">
+            </select> : 
+            <select name="sec">
+            </select><br>
+            <input type="checkbox" name="cookie" id="cookie"/><label for="cookie"> Remember setting</label><br>
+            <button id="update">Update</button>
+
+            <p class="fotter">Powered by <a href="http://hakopako.net">hakopako</a>.</p>
+        </div>
+    </div>
+    <div class="outer">  
+        <div class="title"></div>
+        <div class="vertical_middle time">  
+            00:00:00  
+        </div>  
+    </div> 
 </div><!-- /#container -->
 </body>
 </html>

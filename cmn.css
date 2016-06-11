@@ -1,23 +1,170 @@
 * {
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
-div#container {
-	height: 100%;
+html, body, div#container {
+    height: 100%;
+    background-color: #fafafa;
+    color: #333;
 }
-.menu {
-	text-align: right;
-
+div#trigger {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
 }
 
-button#trigger {
-
+div#trigger:hover {
+    cursor: pointer;
 }
 
-div.time {
-	height: 100%;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 62px;
+div.open {
+    background-image: url(arrow_open.png);
 }
+
+div.close {
+    background-image: url(arrow_close.png);
+}
+
+div.slider {
+    padding: 8px;
+    text-align: center;
+}
+
+p.service-name {
+    font-size: 18px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+input.title {
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #888;
+}
+
+select {
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 0 0px 0 rgba(0,0,0,0);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    vertical-align: middle;
+    border-radius: 6px;
+    border:1px solid #CCC;
+    margin-bottom:25px;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    margin-right: 6px;
+    display: none;
+    margin: 0;
+}
+input[type=checkbox] + label {
+    position: relative;
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 0 0 0 24px;
+    margin-bottom:15px;
+}
+input[type=checkbox] + label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    background: #FFF;
+    border: 2px solid #ccc;
+}
+input[type=checkbox]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    left: 3px;
+    width: 16px;
+    height: 8px;
+    margin-top: -8px;
+    border-left: 3px solid #53b300;
+    border-bottom: 3px solid #53b300;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+button {
+    box-shadow: 0 0px 0 rgba(0,0,0,0);
+    margin-bottom:25px;
+}
+button {
+    color: white;
+    width: 90%;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 0px;
+    padding: 8px 10px 9px 10px;
+    background: rgba(66, 184, 221, 1.0);
+}
+
+button:hover {
+    background: rgba(66, 184, 221, 0.8);
+    cursor: pointer;
+}
+
+button:active {
+    background: rgba(100, 160, 180, 1.0);
+    cursor: pointer;
+}
+
+p.fotter {
+    color: #aaa;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+a{
+    color: #53b300;
+}
+
+div.outer {  
+    display: table;
+    height: 100px;  
+    width: 100%;
+    text-align: center;
+} 
+
+div.title{
+    position: absolute;
+    top: 15%; 
+    left: 0px;
+    right: 0px;
+    font-size: 28px;
+    color: #888;
+}
+
+div.vertical_middle {  
+    display: table-cell;
+    position: absolute;
+    top: 30%; 
+    left: 0px;
+    right: 0px;
+    font-size: 82px;
+}  
+
