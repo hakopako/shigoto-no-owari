@@ -103,12 +103,11 @@ $(function(){
         $("div.title").html(SNO.getCookie("sno-title"));
         $('input[name=title]').val(SNO.getCookie("sno-title"));
         $('input[name=cookie]').attr('checked', true);
-        var t = (SNO.getCookie("sno-endtime") == "") ? "00:00:00" : SNO.getCookie("sno-endtime");
-        var tarr = t.split(":");
-        $('select[name=hour]').val(tarr[0]);
-        $('select[name=min]').val(tarr[1]);
-        $('select[name=sec]').val(tarr[2]);
     }
-    
+    var t = (SNO.getCookie("sno-endtime") == "") ? "00:00:00" : SNO.getCookie("sno-endtime");
+    var tarr = t.split(":");
+    $('select[name=hour]').val(tarr[0]);
+    $('select[name=min]').val(tarr[1]);
+    $('select[name=sec]').val(tarr[2]);
     SNO.init($(".time"), t);
 });
